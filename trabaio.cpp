@@ -22,10 +22,13 @@ string status[100];
 void adicionarTarefa(){
     cout << "Escreva a o titulo da tarefa: " << endl;
     cin.ignore(); 
-    getline (cin, titulo[0]) 
+    getline(cin, titulo[0]);
 }
-
-
 int main(){
-    
+ cout << "Lista de Tarefas ae, que tem disponivel, éh" << endl;
+ cout << "--------------------------------" << endl;
+ cout << "Titulo: " << endl;
+ cout << "Descrição: " << endl;
+ cout << "Data de Vencimento: " << endl;
+ cout << "Status: " << endl; 
 }

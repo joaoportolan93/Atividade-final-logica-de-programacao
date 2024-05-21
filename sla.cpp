@@ -1,14 +1,14 @@
 #include <iostream>
+using namespace std;
 int main() {
- int age;
- std::string name;
+int age;
+string name;
+cout << "Digite sua idade: ";
+cin >> age;
+cin.ignore(); // Ignora o '\n' deixado no buffer
+cout << "Digite seu nome: ";
+getline(cin, name);
 
- std::cout << "Digite sua idade: ";
- std::cin >> age;
- std::cin.ignore(); // Ignora o '\n' deixado no buffer
- std::cout << "Digite seu nome: ";
- std::getline(std::cin, name);
-
- std::cout << "Idade: " << age << ", Nome: " << name << std::endl;
+cout << "Idade: " << age << ", Nome: " << name << endl;
  return 0;
 }
