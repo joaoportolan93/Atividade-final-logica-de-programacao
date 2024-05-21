@@ -25,10 +25,9 @@ void adicionarTarefa(){
     getline(cin, titulo[0]);
 }
 int main(){
- cout << "Lista de Tarefas ae, que tem disponivel, éh" << endl;
- cout << "--------------------------------" << endl;
- cout << "Titulo: " << endl;
- cout << "Descrição: " << endl;
- cout << "Data de Vencimento: " << endl;
- cout << "Status: " << endl; 
-}
+ void visualizarTarefas(){
+    cout << "--------------------------------------------------" << endl;
+    cout << "| ID | Título              | Descrição            | Data de Vencimento | Status      |" << endl;
+    cout << "--------------------------------------------------" << endl;
+ }}
+ 
