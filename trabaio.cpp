@@ -94,9 +94,25 @@ void buscartarefas(){
 }
 }
 void filtro(){
-    int 
+    string statusfiltro;
+    cout << "Digite os status que você queira filtrar" << endl;
+    cin >> statusfiltro;
+        for(int i = 0; i < controle; i++){
+            if(status[i] == statusfiltro){
+        cout << "Tarefa" << i+1 << ":" << endl;
+        cout << "id: " << id[i] << endl;
+        cout << "titulo: " << titulo[i] << endl;
+        cout << "Descrição: " << descricao[i]<< endl;
+        cout << "Data: " << data[i] << endl;
+        cout << "Status: " << status[i] << endl;
+        cout << "------------------------" << endl;
+            }
+        }
 }
-
+void sairdoprograma(){
+    cout << "Saindo do programa" << endl;
+    exit(0);
+}
 int main() {
     int num;
 do{
@@ -128,6 +144,9 @@ case 5:
     break;
 case 6:
     filtro();
+    break;
+case 7: 
+    sairdoprograma();
     break;
 default:
     printf("Numeros invalidos ");
